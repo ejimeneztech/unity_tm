@@ -4,16 +4,21 @@ using UnityEngine;
 
 public class MoveMissile : MonoBehaviour
 {
-    public float speed;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+    public float travelSpeed;
+ 
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.forward * speed * Time.deltaTime);
+        transform.Translate(Vector3.forward * travelSpeed * Time.deltaTime);
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.CompareTag("Destroy"))
+        {
+            Destroy(collision.gameObject);
+
+            Destroy(gameObject);
+        }
     }
 }
