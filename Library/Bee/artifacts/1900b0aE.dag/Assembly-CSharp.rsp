@@ -357,6 +357,7 @@
 "Assets/Scripts/FollowCam.cs"
 "Assets/Scripts/MoveMissile.cs"
 "Assets/Scripts/Player Controller.cs"
+"Assets/Scripts/ShootGun.cs"
 "Assets/Scripts/ShootMissile.cs"
 "Assets/Sport Car - 3D model/Scripts/CameraScript.cs"
 "Assets/Sport Car - 3D model/Scripts/LightEffects.cs"
