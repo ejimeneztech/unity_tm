@@ -5,6 +5,7 @@ using UnityEngine;
 public class MoveMissile : MonoBehaviour
 {
     public float travelSpeed;
+    public float damageAmount = 50;
  
     // Update is called once per frame
     void Update()
@@ -12,11 +13,20 @@ public class MoveMissile : MonoBehaviour
         transform.Translate(Vector3.forward * travelSpeed * Time.deltaTime);
     }
 
+
+    //change this to deal damage instead of destroy
     void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.CompareTag("Destroy"))
+        GameObject target = collision.gameObject;
+        if(target.CompareTag("Destroy"))
         {
-            Destroy(collision.gameObject);
+            //acccess TargetHealth component in target object to deal damage
+            TargetHealth targetHealth = target.GetComponent<TargetHealth>();
+            if (targetHealth != null)
+            {
+                //reference method for taking damage from target component
+                targetHealth.TakeDamage(damageAmount);
+            }
 
             Destroy(gameObject);
         }
