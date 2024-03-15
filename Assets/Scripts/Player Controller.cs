@@ -22,9 +22,13 @@ public class PlayerController : MonoBehaviour
 
     void move()
     {
-        transform.Rotate(Vector3.up * Input.GetAxis("Horizontal") * turnSpeed * Time.deltaTime);
-        
-        
-        transform.Translate(Vector3.forward * Input.GetAxis("Vertical") * acceleerateSpeed * Time.deltaTime);
+        float verticalInput = Input.GetAxis("Vertical");
+        if (verticalInput != 0)
+        {
+            transform.Rotate(Vector3.up * Input.GetAxis("Horizontal") * turnSpeed * Time.deltaTime);
+
+
+            transform.Translate(Vector3.forward * verticalInput * acceleerateSpeed * Time.deltaTime);
+        }
     }
 }

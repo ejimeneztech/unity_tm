@@ -12,7 +12,7 @@ public class ShootGun : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(fireKey))
+        if (Input.GetKey(fireKey))
         {
             RaycastHit hitInfo;
             if(Physics.Raycast(gunTip.position, gunTip.forward, out hitInfo, fireRange))
