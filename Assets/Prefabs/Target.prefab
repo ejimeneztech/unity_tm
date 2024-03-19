@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8665308451449761122}
   - component: {fileID: 6124157934692287800}
   - component: {fileID: 3993463561006119681}
+  - component: {fileID: 2019713057178563961}
   m_Layer: 0
   m_Name: Target
   m_TagString: Destroy
@@ -105,3 +106,17 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1.0531385, z: 1.0451514}
   m_Center: {x: 0, y: 0.02656938, z: -0.022575773}
+--- !u!114 &2019713057178563961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8032813793192179874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c185ab85d30aa34596b56330fbac7b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  currentHealth: 0

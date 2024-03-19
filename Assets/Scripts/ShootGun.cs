@@ -19,6 +19,7 @@ public class ShootGun : MonoBehaviour
             {
                 GameObject target = hitInfo.collider.gameObject;
                 Debug.Log("Hit Target");
+                Debug.Log(hitInfo);
 
                 //acccess TargetHealth component in target object to deal damage
                 TargetHealth targetHealth = target.GetComponent<TargetHealth>();
