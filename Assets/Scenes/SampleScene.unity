@@ -168,9 +168,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefabs:
-  - {fileID: 4849120756351913069, guid: cdf518095837bbd448bc8f02e8e7fc45, type: 3}
-  - {fileID: 8602435134472791492, guid: 66ff6f978d66cc946903e98069c14ee2, type: 3}
-  spawnRadius: 50
+  - {fileID: 2259411365073334115, guid: 76973b715eb8432499748821fbc86a11, type: 3}
+  - {fileID: 7127868053142509984, guid: 4080e309b46c81b46a9129ff6ba9e280, type: 3}
+  - {fileID: 5634567978391406091, guid: 41d9dd3b8b783f14d902e7b6c4f73ec6, type: 3}
+  - {fileID: 6511023548136919340, guid: 25b7b73499ac36c4d99262690f2d1f9c, type: 3}
+  spawnRadius: 200
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0

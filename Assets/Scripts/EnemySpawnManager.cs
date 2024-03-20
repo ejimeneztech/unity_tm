@@ -27,16 +27,14 @@ public class EnemySpawnManager : MonoBehaviour
             return;
         }
 
-        //Randomly select enemy prefab from array
-        GameObject randomEnemyPrefab = enemyPrefabs[Random.Range(0, enemyPrefabs.Length)];
 
         foreach(GameObject enemyPrefab in enemyPrefabs)
         {
             //Randomly generate spawn position within spawn radius
             Vector3 spawnPosition = transform.position + Random.insideUnitSphere * spawnRadius;
-            spawnPosition.y = 0f;
+            spawnPosition.y = 3.7f;
 
-            Instantiate(randomEnemyPrefab, spawnPosition, Quaternion.identity);
+            Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
         }
         
     }
