@@ -6,11 +6,19 @@ public class MoveMissile : MonoBehaviour
 {
     public float travelSpeed;
     public float damageAmount = 50;
+    public float delay;
+  
+
+    void Start()
+    {
+        Invoke("DestroyDelay", delay);
+    }
  
     // Update is called once per frame
     void Update()
     {
         transform.Translate(Vector3.forward * travelSpeed * Time.deltaTime);
+        
     }
 
 
@@ -30,5 +38,11 @@ public class MoveMissile : MonoBehaviour
 
             Destroy(gameObject);
         }
+    }
+
+
+    void DestroyDelay()
+    {
+        Destroy(gameObject);
     }
 }

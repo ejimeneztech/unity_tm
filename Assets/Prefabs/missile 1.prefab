@@ -28,8 +28,8 @@ Transform:
   m_GameObject: {fileID: 37112923411007160}
   serializedVersion: 2
   m_LocalRotation: {x: -0.02066635, y: 0.24449041, z: 0.0052120886, w: 0.96941745}
-  m_LocalPosition: {x: 23.78, y: 18.937, z: 16.235}
-  m_LocalScale: {x: 0.16854076, y: 0.1565723, z: 0.119765766}
+  m_LocalPosition: {x: 24.644, y: 19.015, z: 17.839}
+  m_LocalScale: {x: 0.16854076, y: 0.06852166, z: 0.06567739}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4973640524393504247}
@@ -73,6 +73,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   travelSpeed: 150
+  damageAmount: 50
+  delay: 5
 --- !u!54 &8145330286542993028
 Rigidbody:
   m_ObjectHideFlags: 0
