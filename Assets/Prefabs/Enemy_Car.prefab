@@ -1924,6 +1924,8 @@ GameObject:
   - component: {fileID: 3140243771669159994}
   - component: {fileID: 9188245977801011617}
   - component: {fileID: 1145255012453794244}
+  - component: {fileID: 7958343271403674197}
+  - component: {fileID: -5482926587146942735}
   m_Layer: 0
   m_Name: Enemy_Car
   m_TagString: Destroy
@@ -1940,7 +1942,7 @@ Transform:
   m_GameObject: {fileID: 7127868053142509984}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 4.618857, y: 5.1635957, z: 3.9239538}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1991,3 +1993,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   currentHealth: 0
+--- !u!195 &7958343271403674197
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7127868053142509984}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 12
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0.7
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &-5482926587146942735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7127868053142509984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1653a5292703654d8488b9a3e7e1966, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 4735839243174642, guid: f8b49f9d229541d43b30476c740c2477, type: 3}

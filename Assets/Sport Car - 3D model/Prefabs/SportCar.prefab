@@ -2601,7 +2601,7 @@ GameObject:
   - component: {fileID: 4852481606295292}
   - component: {fileID: 33851051239749526}
   - component: {fileID: 64117512483129164}
-  m_Layer: 1
+  m_Layer: 0
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2795,6 +2795,7 @@ MonoBehaviour:
   fireKey: 13
   gunTip: {fileID: 5560817203809773395}
   fireRange: 100
+  damageAmount: 10
 --- !u!1 &1547043310347174
 GameObject:
   m_ObjectHideFlags: 0
@@ -4240,6 +4241,7 @@ GameObject:
   - component: {fileID: 74856405766938484}
   - component: {fileID: 3508835576726144743}
   - component: {fileID: 20445827113910557}
+  - component: {fileID: 6145428222918385136}
   m_Layer: 0
   m_Name: Gun
   m_TagString: Untagged
@@ -4335,3 +4337,19 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &6145428222918385136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4706750139431846630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82af577d068a6d7489a71d747ce50cc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireKey: 13
+  gunTip: {fileID: 5560817203809773395}
+  fireRange: 100
+  damageAmount: 10
